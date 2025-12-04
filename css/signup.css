@@ -8,20 +8,33 @@ body {
     background-color: #F8FBFF;
     color: #023047;
     line-height: 1.5;
+
+     background: url(./../images/login-page-img.jpg) no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
 }
-
-
-.navbar {
+.navbar-main-container {
     background-color: #0077B6;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+     position: sticky;
+            top:0;
 
 }
 
-.brand {
+.navbar-main-container:hover {
+    box-shadow: 0px 9px 8px blue;
+}
+
+.main-logo {
+    border-radius: 50px;
+}
+
+.logo-container {
     color: #FFFFFF;
     font-size: 25px;
     font-weight: bold;
@@ -30,51 +43,132 @@ body {
     justify-content: center;
     display: flex;
     gap: 15px;
-
 }
 
+.heading {
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
 
 .nav-links {
-    list-style: none;
+    color: none;
     display: flex;
-    margin-left: 10px;
+    gap: 30px;
+    cursor: pointer;
+    padding: 15px;
+
 }
 
-.nav-links a {
+
+.auth-nav-links {
+    background-color: none;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.main-image {
+    margin-top: 20px;
+    width: 600px;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.main-content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-heading {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.project-sub-heading {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #FF6F00;
     color: #FFFFFF;
     text-decoration: none;
-    padding: 6px 13px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-.nav-links a:hover {
-    background-color: #00B4D8;
+.btn-1:hover {
+    background: #0077B6;
 }
+
+.sinup {
+    color: #f8fbff;
+}
+
+.login {
+    color: #f8fbff;
+}
+
+.contact {
+    color: #f8fbff;
+}
+
+.home {
+    color: #f8fbff;
+}
+
+.about {
+    color: #f8fbff;
+}
+
+.destination {
+    color: #f8fbff;
+}
+
+.services {
+    color: #f8fbff;
+}
+
+.booking {
+    color: #f8fbff;
+}
+ 
 
 
 .container {
-    display: flex;
-    min-height: 720px;
+       display: flex;
+         min-height: 500px;
+
+         background: url(./../images/login-page-img.jpg) no-repeat center/cover;
+         align-items: center;
+         padding-bottom: 60px;
 }
 
 .left-side {
-    flex: 3;
-    background-image: url('./../images/login-page-img.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
+   
     align-items: center;
     justify-content: center;
+    
 }
 
 .overlay {
-
-    padding: 15px;
+ margin-bottom: 350px;
+     padding-top: 200px;     
+   
     border-radius: 10px;
     text-align: center;
     color: #FFFFFF;
+     padding-left:55px ;
 }
 
 .quote {
@@ -94,6 +188,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 33px;
+    padding-bottom: 100px;
 }
 
 .login-card {
@@ -101,9 +196,10 @@ body {
     padding: 32px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 600px;
     max-width: 450px;
     height: 530px;
+    
 
 }
 
@@ -148,13 +244,13 @@ body {
 }
 
 .btn-primary {
-    background-color: #0077b6;
+    background-color:  #FF6F00;
     color: #FFFFFF;
 
 }
 
 .btn-primary:hover {
-    background-color: #00b4d8;
+    background-color: #0077B6;
 
 }
 
