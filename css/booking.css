@@ -21,6 +21,7 @@ body {
       padding: 12px 16px;
       text-decoration: none;
       font-size: 25px;
+      
     }
 
     .navbar a:hover {
@@ -30,16 +31,27 @@ body {
     }
 
     .brand {
+      display: flex;
+      align-items: center;
       justify-content: center;
-      border-radius: 50px;
-      gap: 10px;
-      font-size: 25px;
+      border-radius: 50%;
+      font-weight: bold;
+      margin-right: 385px; 
+      
+    }
+    .name{
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: #ffffff;
       font-weight: bold;
-      margin-right: 150px;
-      align-items: center;
+      font-size: 25px;
+      margin-right: 160px;
+      text-decoration: none;
+      list-style: none;
+       
+      
     }
-    
     .bottom{
         height: 300px;
         width: 100%;
@@ -131,3 +143,73 @@ body {
       color: white;
       border-radius: 4px;
     }
+
+    @media (max-width: 992px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .nav-links a {
+        font-size: 18px;
+        padding: 6px 10px;
+      }
+
+      .form-container,
+      .pay-box {
+        width: 90%;
+      }
+    }
+
+    /* Mobile phones */
+    @media (max-width: 600px) {
+      .navbar {
+        padding: 12px;
+      }
+
+      .brand {
+        font-size: 22px;
+     
+        gap: 5px;
+      }
+
+      .logo-img {
+        width: 45px;
+        height: 45px;
+        margin: 0;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+      }
+
+      .nav-links a {
+        display: block;
+        background: #0096c7;
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      .form-container {
+        padding: 15px;
+      }
+
+      input, select, textarea {
+        font-size: 15px;
+      }
+
+      .pay-box {
+        width: 100%;
+        padding: 15px;
+      }
+    
