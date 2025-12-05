@@ -38,7 +38,7 @@ body {
 }
 
 .heading {
-    font-size: 20px;
+    font-size: 30px;
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -62,34 +62,47 @@ body {
 
 .sinup {
     color: #f8fbff;
+    text-decoration: none;
 }
 
 .login {
     color: #f8fbff;
+    text-decoration: none;
 }
 
 .contact {
     color: #f8fbff;
+    text-decoration: none;
 }
 
 .home {
     color: #f8fbff;
+    text-decoration: none;
 }
 
 .about {
     color: #f8fbff;
+    text-decoration: none;
 }
 
 .destination {
     color: #f8fbff;
+    text-decoration: none;
 }
 
 .services {
     color: #f8fbff;
+    text-decoration: none;
 }
 
 .booking {
     color: #f8fbff;
+    text-decoration: none;
+}
+
+.packages {
+    color: #f8fbff;
+    text-decoration: none;
 }
 
 /* ---------- About Section ---------- */
